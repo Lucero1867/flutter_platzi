@@ -44,7 +44,10 @@ class DescriptioPlace extends StatelessWidget {
           margin: const EdgeInsets.only(top: 320.0, left: 20.0, right: 20.0),
           child: Text(
             namePlace,
-            style: const TextStyle(fontSize: 30.0, fontWeight: FontWeight.w900),
+            style: const TextStyle(
+                fontFamily: "Lato",
+                fontSize: 30.0,
+                fontWeight: FontWeight.w900),
             textAlign: TextAlign.left,
           ),
         ),
@@ -65,6 +68,7 @@ class DescriptioPlace extends StatelessWidget {
       child: Text(
         descriptionPlace,
         style: const TextStyle(
+            fontFamily: "Lato",
             fontSize: 18.0,
             fontWeight: FontWeight.bold,
             color: Color(0xFF56575a)),

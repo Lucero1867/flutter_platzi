@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'description_place.dart';
+import 'review_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
             title: const Text("Hola Mundo Feliz"),
             backgroundColor: Colors.blue,
           ),
-          body: DescriptioPlace("Bahamas", DescriptioPlace.descriptionDummy, 4),
+          //body: DescriptioPlace("Bahamas", DescriptioPlace.descriptionDummy, 4),
+          body: ReviewList(),
         ));
   }
 }
