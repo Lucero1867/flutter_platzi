@@ -13,7 +13,7 @@ class Review extends StatelessWidget {
     final userComment = Container(
       margin: const EdgeInsets.only(left: 20.0),
       child: Text(
-        details,
+        comment,
         textAlign: TextAlign.left,
         style: const TextStyle(
             fontFamily: "Lato", fontSize: 13.0, fontWeight: FontWeight.w900),
@@ -54,7 +54,7 @@ class Review extends StatelessWidget {
               DecorationImage(fit: BoxFit.cover, image: AssetImage(pathImage))),
     );
     return Row(
-      children: <Widget>[photo, userComment],
+      children: <Widget>[photo, userDetails],
     );
   }
 }

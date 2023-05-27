@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'description_place.dart';
 import 'review_list.dart';
+import 'gradient_back.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,12 +20,19 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         home: Scaffold(
-          appBar: AppBar(
-            title: const Text("Hola Mundo Feliz"),
-            backgroundColor: Colors.blue,
-          ),
           //body: DescriptioPlace("Bahamas", DescriptioPlace.descriptionDummy, 4),
-          body: ReviewList(),
+          //Stack: Hace que un elemento se ponga encima de otro.
+          body: Stack(children: <Widget>[
+            ListView(
+              children: <Widget>[
+                DescriptioPlace("Bahamas", DescriptioPlace.descriptionDummy, 4),
+                ReviewList(),
+                ReviewList(),
+                ReviewList(),
+              ],
+            ),
+            GradientBack("Popular")
+          ]),
         ));
   }
 }
