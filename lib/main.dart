@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'description_place.dart';
 import 'review_list.dart';
 import 'gradient_back.dart';
+import 'header_appbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,10 +29,9 @@ class MyApp extends StatelessWidget {
                 DescriptioPlace("Bahamas", DescriptioPlace.descriptionDummy, 4),
                 ReviewList(),
                 ReviewList(),
-                ReviewList(),
               ],
             ),
-            GradientBack("Popular")
+            HeaderAppbar()
           ]),
         ));
   }

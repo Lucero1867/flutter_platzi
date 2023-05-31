@@ -91,6 +91,10 @@ flutter:
     - assets/img/people.jpg
     - assets/img/ann.jpg
     - assets/img/girl.jpg
+    - assets/img/invierno.jpg
+    - assets/img/cascadas.jpg
+    - assets/img/montañas.jpg
+    - assets/img/beach.jpg
   
   fonts:
     - family: Lato
