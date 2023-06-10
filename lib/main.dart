@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'description_place.dart';
-import 'review_list.dart';
-import 'gradient_back.dart';
-import 'header_appbar.dart';
+import 'package:flutter_platzi/platzi_trips.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,20 +17,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
           useMaterial3: true,
         ),
-        home: Scaffold(
-          //body: DescriptioPlace("Bahamas", DescriptioPlace.descriptionDummy, 4),
-          //Stack: Hace que un elemento se ponga encima de otro.
-          body: Stack(children: <Widget>[
-            ListView(
-              children: <Widget>[
-                DescriptioPlace("Bahamas", DescriptioPlace.descriptionDummy, 4),
-                ReviewList(),
-                ReviewList(),
-              ],
-            ),
-            HeaderAppbar()
-          ]),
-        ));
+        home: const PlatziTrips());
   }
 }
 
